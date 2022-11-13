@@ -14,11 +14,22 @@ $(call inherit-product, vendor/hotword/google.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
 
+# Rice 
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+SUSHI_BOOTANIMATION := 1080
+RICE_CHIPSET := Snapdragon 720G
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+WITH_GMS := true
+RICE_MAINTAINER := Neel0210
+
 # Inherit some common stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_RMX2061
+PRODUCT_NAME := lineage_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 6 Pro
