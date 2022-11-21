@@ -34,3 +34,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePkgs
+
+# Camera
+PRODUCT_PACKAGES += \
+    ApertureCam
