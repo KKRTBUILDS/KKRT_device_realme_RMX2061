@@ -12,18 +12,18 @@ $(call inherit-product, vendor/hotword/google.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GMS := true
+SUSHI_BOOTANIMATION := 1080
 
-# Rice 
+# Rice M.. Flags
+RICE_MAINTAINER := Neel0210
+RICE_CHIPSET := Snapdragon 720G
+
+# GAPPS
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-SUSHI_BOOTANIMATION := 1080
-RICE_CHIPSET := Snapdragon 720G
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
 TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
-WITH_GMS := true
-RICE_MAINTAINER := Neel0210
 
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
