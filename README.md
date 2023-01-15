@@ -44,7 +44,10 @@ git clone --depth=1 https://github.com/KKRTBUILDS/KKRT_vendor_hotword.git vendor
 git clone https://github.com/CannedShroud/android_packages_apps_KProfiles packages/apps/KProfiles
 
 # kernel tree
-git clone --depth=1 https://github.com/KKRTBUILDS/KKRT_kernel_realme_atoll_oss.git kernel/realme/atoll
+git clone https://github.com/KakarotKernel/android_kernel_realme_atoll.git kernel/realme/atoll
+
+# Proton clang
+git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/host/linux-x86/clang-proton
 
 # Hardware tree
 git clone https://github.com/KKRTBUILDS/KKRT_hardware_xiaomi.git hardware/xiaomi
